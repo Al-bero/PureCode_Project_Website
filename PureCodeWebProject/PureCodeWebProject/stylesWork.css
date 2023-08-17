@@ -1,0 +1,113 @@
+/* Reset some default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333E50;
+}
+
+.telegram-button {
+    background-color: #2BBFB0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Main Content Styles */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.box2 {
+    width: 556px;
+    height: 195px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 2;
+    text-align: left;
+    color: #2C607D;
+}
+
+.box2 h2 {
+    color: #2C607D;
+    margin-bottom: 10px;
+}
+
+.box2 p {
+    color: #333E50;
+    margin-bottom: 15px;
+}
+
+.box2 .button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #2BBFB0;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.box2 .button:hover {
+    background-color: #279c8f;
+}

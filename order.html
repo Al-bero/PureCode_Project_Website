@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="stylesWork.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thank.css">
+    <link rel="stylesheet" href="stylesContact.css">
+  <title>Order a Service</title>
+  
+</head>
+
+<style>
+    body {
+  background-color: #ffffff;
+}
+    form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  color:#2BBFB0
+}
+
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  border-radius: 10px;
+
+}
+
+
+</style>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="images/Logo with Font - Jpg.jpg" alt="Logo">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+      </ul>
+    </nav>
+    <button class="telegram-button">Telegram</button>
+  </header>
+
+   <section>
+    <h2>Order a Service</h2>
+  <form action="/order-service" method="post" >
+    
+    <div class="form-group">
+      <input placeholder="Your Name" type="text" name="name" id="name" class="form-control">
+    </div>
+    <div class="form-group">
+      <input placeholder="Your Email" type="email" name="email" id="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <input placeholder="Your Phone Number" type="tel" name="phone" id="phone" class="form-control">
+    </div>
+    <div class="form-group">
+      <input placeholder="Schedule a Meeting" type="date" name="schedule" id="schedule" class="form-control">
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</section> 
+</body>
+</html>

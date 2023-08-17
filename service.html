@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="stylesWork.css">
+  <link rel="stylesheet" href="thank.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <style>
+      h2{
+        display: flex;
+        justify-content: center;
+        color: #2BBFB0 ;
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 30px;
+      }
+      .accordion{
+        margin: 60px auto;
+        width: 600px;
+      }
+      
+      .accordion li{
+        list-style: none;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+      }
+
+      .accordion li label{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      label::before{
+        content: '+';
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      input[type="radio"]{
+        display: none;
+      }
+
+      .accordion .content{
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+      }
+
+      .accordion input[type="radio"]:checked + label + .content{
+        max-height: 400px;
+        padding: 10px 10px 20px;
+      }
+
+      .accordion input[type="radio"]:checked + label::before{
+        content: '-';
+      }
+
+      .but-div{
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color:#2BBFB0 ;
+        text-decoration: none;
+        font-size: 1.1em;
+        display: inline-block;
+        padding: 0.8em 1.1em;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-left: 220px;
+        transition: 0.7s ease;
+        
+       }
+
+    </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="images/Logo with Font - Jpg.jpg" alt="Logo">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+      </ul>
+    </nav>
+    <button class="telegram-button">Telegram</button>
+  </header>
+
+  <ul class="accordion">
+    <br>
+    <br>
+      <h2>Services</h2>
+        <li>
+            <input type="radio" name="accordion" id="first" >
+            <label for="first">Mobile Application</label>
+            <div class="content">
+                <p>
+                    PureCode application development teams believe in developing 
+                    quality in an artistic way. Be it Android, IOS, or windows, our mobile 
+                    apps development will enable you to run it on every platform using 
+                    our apps development platform. We offer both Back and front-end 
+                    development tools, and covering various mobile app development 
+                    platforms like Android, iOS, Windows, etc. High-quality engineer 
+                    Scrum Master
+                </p>
+                <a href="order.html"><button class="but-div">ORDER</button> </a>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Web Application</label>
+            <div class="content">
+                <p>
+                  Pure code has a well-experienced web development team in building & managing the website that works for your long-term business goals and meets your expectations.
+
+                  We deliver responsive websites by using the various frameworks on different platforms.
+                  
+                  Developing the website with Angular.Js and React.Js is considered by many & with our web developing methodologies, and programming languages, so we will assure you the best project lead by our proficient web development team.
+                  
+                  We at Pure code deals with the latest prototype design & better front end & backend support you will attain the best web development services.
+                </p> 
+                <a href="order.html"><button class="but-div">ORDER</button> </a>  
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Game Development</label>
+            <div class="content">
+                <p>
+                  Pure code for game development offers comprehensive solutions to help you design, develop and market your game from start to finish.
+
+                  Everyone from any age group is engaged in gaming from using papers and chalks to using VR glasses, whatever the gaming platform, console, devices, online, offline, or whatever available, but everyone is a gaming lover.
+
+                  What about creating your dream game, or offering gaming heaven to people, your dream can simply come true with us.
+
+                  We specialize in providing comprehensive solutions for an affordable game development company.
+
+                  As one of the best game design and development companies in the industry, our team designers and developers have worked on numerous games for computers, consoles, web, and mobile platforms.
+                </p> 
+                <a href="order.html"><button class="but-div">ORDER</button> </a>   
+            </div>
+        </li>
+
+        <li>
+          <input type="radio" name="accordion" id="furth">
+          <label for="furth">Business Solutions</label>
+          <div class="content">
+              <p>
+                Pure code offers appropriate business solutions for both big and small businesses.
+                We are committed to providing an outstanding customer experience with every interaction.
+
+                Our company believes that customer experience is the key to creating lasting value for both business and their customers.
+
+                We do this by creating integrated platforms, which include multiple customer channels and operations support.
+              </p> 
+              <a href="order.html"><button class="but-div">ORDER</button> </a> 
+          </div>
+      </li>
+
+      <li>
+        <input type="radio" name="accordion" id="fifth">
+        <label for="fifth">Content Management</label>
+        <div class="content">
+            <p>
+              Pure code's content management is very important for the digital world, as it is the language that delivers the message and the value to its right audience, and has the power to turn them into loyal clients and customers.
+
+              So we offer a content management application that works as the front-end user interface that allows a user, even with limited expertise, to add, modify, and remove content from a website without the intervention of a webmaster; and a content delivery application (CDA), that compiles the content and updates the website.
+            </p>   
+            <a href="order.html"><button class="but-div">ORDER</button> </a>
+        </div>
+    </li>
+
+    <li>
+      <input type="radio" name="accordion" id="sixth">
+      <label for="sixth">Digital Marketing</label>
+      <div class="content">
+          <p>
+            In Today’s marketing world, Digital Marketing experts are the creative king with whom you can boost & shift your business growth to sky level.
+
+            What is Digital Marketing?
+            also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.
+          </p> 
+          <a href="order.html"><button class="but-div">ORDER</button> </a>  
+      </div>
+  </li>
+
+  <li>
+    <input type="radio" name="accordion" id="seventh">
+    <label for="seventh">Ecommerce</label>
+    <div class="content">
+        <p>
+          E-Commerce nowadays is a must, the whole world now has the internet. You can literally visit anywhere around the world and buy anything with a click of a button while you at home. That’s why it’s vital that you build your online business presence to reach millions easily. If you’re a business owner or have products and you want to make a nice responsive eCommerce, then Pure Code is your best option.
+        </p>   
+        <a href="order.html"><button class="but-div">ORDER</button> </a>
+    </div>
+</li>
+
+<li>
+  <input type="radio" name="accordion" id="eighth">
+  <label for="eighth">Software Development</label>
+  <div class="content">
+      <p>
+        PureCode Software Development makes sure to deliver well-built and distinguished programs to meet your business needs and reach optimal results.
+
+        Basically, Software development is very lucrative for people who have the right skills and education in programming. PureCode has a professional, well-trained team that is up-to-date with the daily programming development news, tools, and strategies.
+      </p>   
+      <a href="order.html"><button class="but-div">ORDER</button> </a> 
+  </div>
+</li>
+
+
+
+    </ul>
+</body>
+</html>
